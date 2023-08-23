@@ -30,6 +30,21 @@ public class Lista {
 		}
 	}
 	
+	public void posicion() {
+		int j=0;
+		int k=1;
+		for(int i=0;i<diasSemana.size();i++) {
+			j++;
+			System.out.println(j + " " +k + diasSemana.get(i) + mensaje());
+			k++;
+			
+		}
+	}
+	
+	public String mensaje() {
+		return "Este es el mensaje";
+	}
+	
 	public void eliminarElemento() {
 		diasSemana.remove("Jueves");
 		System.out.println(diasSemana);
